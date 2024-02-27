@@ -1,5 +1,4 @@
-# 23WS-CV3D-Fake-Face-Detection
-## A Web Application for Fake Face Detection
+# A Web Application for Fake Face Detection
 
 ### Project Overview
 We are aiming to develop a web application for Real and Fake Face Detection utilizing either Flask or Streamlit, based on TensorFlow or PyTorch.
