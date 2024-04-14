@@ -5,4 +5,8 @@ FirstName LastName.
 \newblock The frobnicatable foo filter, 2014.
 \newblock Face and Gesture submission ID 324. Supplied as additional material {\tt fg324.pdf}.
 
+\bibitem{kaggledatasetRealAndFakeFaceDetection}
+{Seonghyeon Nam, Hyolim Kang, Dongyoung Kim, Sejong Yang, et al.}
+\newblock Dataset: Real and fake face detection, 2019.
+
 \end{thebibliography}
