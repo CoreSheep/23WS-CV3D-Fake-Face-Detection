@@ -25,6 +25,30 @@
 %%%%%%%%% TITLE - PLEASE UPDATE
 \title{Real and Fake Face Detection}  % **** Enter the paper title here
 
+
+\author{J L\\
+1234567\\
+Master in Data and Computer Science\\
+{\tt\small Person1@i1.org}
+\and
+X P\\
+1234567\\
+Master in Data and Computer Science\\
+{\tt\small Person1@i2.org}
+\and
+R C\\
+1234567\\
+Master in Data and Computer Science\\
+{\tt\small Person1@i2.org}
+\and
+H K \\
+1234567\\
+Master in Data and Computer Science\\
+{\tt\small Person1@i2.org}
+\and
+Mentor: PLEASE DO NOT UPLOAD PERSONAL INFORMATION TO PUBLIC PLATFORM
+}
+
 \maketitle
 \thispagestyle{empty}
 
@@ -44,21 +68,25 @@ To construct our dataset, we draw upon the "Real and Fake Face Detection" datase
 Benchmarking Against Established Models:
 To assess the effectiveness of our CNN model, we benchmark its performance against established baselines, including ResNet and MobileNetV2, renowned for their accuracy and efficiency in image classification tasks. Furthermore, we compare our model against GramNet with Gram Block, a state-of-the-art approach noted for its robustness and general applicability in fake face detection. By conducting rigorous evaluations using identical test datasets, we provide insights into the relative strengths and weaknesses of different CNN architectures for detecting manipulated images.
 
-%-------------------------------------------------------------------------
-
-\subsection{Sample}
-Sample
-
 %------------------------------------------------------------------------
 \section{Related Work}
 \section{Method}
+
+\subsection{Convolutional Neural Network}
+A simple CNN network can be used to test the correctness of program exectution and observe the flow of data. Because of its brief structure, it can significantly reduce the cost of computing resources. At the same time, it can alos be used as one of the benchmark performance indicators for comparison and analysis with other types of subsequent network models.
+
+This convolutional neural network is designed for image classificaion, structured with an input layer which taks 3-channel RGB images, followed by three convolutional layers, each with a 3x3 kernal and padding of 1, progressively increasing the number of filters from 32 to 64 and finally 128. Each convolutional layer is followed by a ReLU activation function and a 2x2 max pooling layer. The output is flattened and passed throught two fully connected layers. The first FC layer transforms the feature map into 512 features, followed by another ReLU, and the second FC layer reduces it to 2 outputs for classification. 
+
+The Improved CNN represents an enhancement of the previous 'SimpleCNN' model. it is designed to achieve better performance by adopting serveral architectural adjustments to increase the network's capacity and reduce overfitting.
+
+Compared with the basic version of CNN, the improved version of convolutional neural network has been improved in the following aspects: An additional convolutional layer has been introduced; The depth is increased with 256 filters; Each convolutional layer is now followed by a batch normalization layer; A dropout layer with a rate is introduced before the first fully connected layer; Also an increased fully connected layer capacity, transforms the feature maps into a larger dimensional space.
 
 \subsection{GramNet Architecture}
 \cite{liu2020global} introduces a sophisticated deep neural network architecture designed to enhance the capture of global features, which is specifically tailored for the detection of counterfeit facial representations. We have implemented modifications and simplifications to the original architecture. In the GramNet architecture, Gram Blocks (Figure \ref{fig:gramblock}) are integrated at the input image stage and before each downsampling layer to encapsulate global image texture information across various semantic levels (Figure \ref{fig:gramnet} ). Each Gram Block is composed of several layers: an initial convolution layer adjusts the feature dimensions from diverse levels, followed by a Gram matrix calculation layer that captures the global image texture features. This setup is then refined through two consecutive layers—each a combination of a convolution, a batch normalization, and a ReLU activation. Finally, a global pooling layer is employed to synchronize the gram-style features with the main ResNet like framework. \cite{he2015deep} introduces ResNet, which is a residual learning framework to ease the training of networks that are substantially deeper than those used previously. In this study, we leverage the robust capabilities of the ResNet architecture to facilitate the training process of our GramNet model, enhancing its efficiency and effectiveness.
 
 \begin{figure}[t]
 \begin{center}
-   \includegraphics[width=0.8\linewidth]{GramBlock.jpg}
+   \includegraphics[width=0.8\linewidth]{images/GramBlock.jpg}
 \end{center}
    \caption{Gram Blocks are added to the GramNet architecture on the input image and before every downsampling layer, incorporating global image texture information in different semantic levels. In the Gram Block, there are three convolutional layers, and for each convolutional layer, we apply Batch Normalization and Relu active function to it. In the end, we use the downsampling layer.}
 \label{fig:long}
@@ -67,7 +95,7 @@ Sample
 
 \begin{figure*}[t]
 \begin{center}
-   \includegraphics[width=0.8\linewidth]{GramNet.jpg}
+   \includegraphics[width=0.8\linewidth]{images/GramNet.jpg}
 \end{center}
    \caption{In the GramNet architecture, Gram Blocks are strategically integrated to enhance the capture of global features.}
 \label{fig:long}
@@ -100,13 +128,13 @@ In designing this model, there are three primary reasons for its architectural c
 \begin{figure*}[t]
 \centering
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{Dataset1_Fakeface.jpg}
+   \includegraphics[width=\linewidth]{images/Dataset1_Fakeface.jpg}
    % \caption{Fake faces from dataset 1}
    \label{fig:image1}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{Dataset1_Realface.jpg}
+   \includegraphics[width=\linewidth]{images/Dataset1_Realface.jpg}
    % \caption{Real faces from dataset 1}
    \label{fig:image2}
 \end{minipage}
@@ -119,8 +147,61 @@ In designing this model, there are three primary reasons for its architectural c
 \subsection{Details in Experiment}
 \subsubsection{Model training and evaluation}
 \begin{itemize}
-        \item \textbf{Simple CNN} \\
-        \item \textbf{Improved CNN} \\
+   \item Simple CNN \\
+   1. Training and validating on dataset 1
+       Experienments start with the small-scale dataset 1, wiit simpleCNN structure, as in Figure~\ref*{fig:ex-d1-simplecnn-results}, after 20 rounds of iterations, the validation accuracy remains fluctuating within a range and has not increased significantly. The accuracy is about 60\%.  
+       \\
+       \\
+   2. Training and validating on dataset 2
+       The situation changes when large-scale data sets are adopted. With the support of the training set of 140k+ images, even the network structure of simpleCNN has achieved a huge leap in verification accuracy. As shown in Figure~\ref*{fig:ex-d2-simplecnn-results}, it reached about 94\% after 20 rounds of iterations. Compared with the case of using the simplified data set (Figure~\ref*{fig:ex-d1-simplecnn-results}), an improvement of more than 30\% is achieved.
+       
+
+       \begin{figure}[t]
+          \centering
+          \includegraphics[width=0.9\linewidth]{images/ex-d1-simplecnn-accuracy-results.png}
+          \caption{Training and Validation results of simple CNN with the compact dataset}
+          \label{fig:ex-d1-simplecnn-results}
+       \end{figure}
+       
+       \begin{figure}[t]
+          \centering
+          \includegraphics[width=0.9\linewidth]{images/ex-d1-improvedcnn-accuracy-results.png}
+          \caption{Training and Validation results of improved CNN with the compact dataset}
+          \label{fig:ex-d1-improvedcnn-results}
+       \end{figure}
+
+   \item Improved CNN \\
+   1. Training and validating on dataset 1
+       The ImprovedCNN brought slight better performance in the later iterations of training. As shown in Figure~\ref*{fig:ex-d1-improvedcnn-results}, the validation accuracy range came to between 60\% to 65\%, but it was very unobvious and thus did not bring significantly improvement.
+       \\
+       \\
+   2. Training and validating on dataset 2
+       The performance of the improved CNN network structure in large-scale datasets is shown in Figure~\ref*{fig:ex-d2-improvedcnn-results}. Although it has been greatly improved, the advantage over simpleCNN is very little. after 20 epochs, it reached about 96\% validation accuracy.
+       \\
+       \\
+   3. Training and validating on cross-dataset
+       An ImprovedCNN structure has no advantage in capturing and managing features from cross-datasets, as in Figure~\ref*{fig:ex-cd-improvedcnn-results}, the performance is quite poor in absolute terms, with only about 51\% accuracy. It is also very unstable in relative terms, thus it is basically unusable.
+
+   \begin{figure}[t]
+      \centering
+      \includegraphics[width=0.9\linewidth]{images/ex-cd-improvedcnn-accuracy-results.png}
+      \caption{Training and Validation results of improved CNN with the cross-datasets}
+      \label{fig:ex-cd-improvedcnn-results}
+   \end{figure}
+
+       \begin{figure}[t]
+          \centering
+          \includegraphics[width=0.9\linewidth]{images/ex-d2-simplecnn-accuracy-results.png}
+          \caption{Training and Validation results of simple CNN with the large-scale dataset}
+          \label{fig:ex-d2-simplecnn-results}
+       \end{figure}
+       
+       \begin{figure}[t]
+          \centering
+          \includegraphics[width=0.9\linewidth]{images/ex-d2-improvedcnn-accuracy-results.png}
+          \caption{Training and Validation results of improved CNN with the large-scale dataset}
+          \label{fig:ex-d2-improvedcnn-results}
+       \end{figure}
         \item \textbf{GramNet} \\
          \textbf{1. Training and validating on dataset 1}  \\
             In the case of Dataset 1, as shown in Figure \ref{fig:gramnet51_d1}{}, which is characterized by its limited size, the GramNet architecture fails to demonstrate its effectiveness. The constrained volume of training data appears to significantly hinder the model's performance, resulting in notably poor outcomes on this dataset. This observation underscores the potential limitations of GramNet when applied to smaller datasets, where insufficient training examples may not adequately support the complex feature extraction capabilities designed to harness global image texture information.   
@@ -142,13 +223,13 @@ In designing this model, there are three primary reasons for its architectural c
 \begin{figure*}[t]
 \centering
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{gramnet51_d1_loss.jpg}
+   \includegraphics[width=\linewidth]{images/gramnet51_d1_loss.jpg}
    % \caption{Fake faces from dataset 1}
    \label{fig:image1}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{gramnet51_d1_acc.jpg}
+   \includegraphics[width=\linewidth]{images/gramnet51_d1_acc.jpg}
    % \caption{Real faces from dataset 1}
    \label{fig:image2}
 \end{minipage}
@@ -159,13 +240,13 @@ In designing this model, there are three primary reasons for its architectural c
 \begin{figure*}[t]
 \centering
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{gramnet51_d2_loss.jpg}
+   \includegraphics[width=\linewidth]{images/gramnet51_d2_loss.jpg}
    % \caption{Fake faces from dataset 1}
    \label{fig:image1}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{gramnet51_d2_acc.jpg}
+   \includegraphics[width=\linewidth]{images/gramnet51_d2_acc.jpg}
    % \caption{Real faces from dataset 1}
    \label{fig:image2}
 \end{minipage}
@@ -176,13 +257,13 @@ In designing this model, there are three primary reasons for its architectural c
 \begin{figure*}[t]
 \centering
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{gramnet51_cd_loss.jpg}
+   \includegraphics[width=\linewidth]{images/gramnet51_cd_loss.jpg}
    % \caption{Fake faces from dataset 1}
    \label{fig:image1}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{gramnet51_cd_acc.jpg}
+   \includegraphics[width=\linewidth]{images/gramnet51_cd_acc.jpg}
    % \caption{Real faces from dataset 1}
    \label{fig:image2}
 \end{minipage}
@@ -227,13 +308,13 @@ In designing this model, there are three primary reasons for its architectural c
 \begin{figure*}[t]
 \centering
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{mobilenetv2_cd_loss.jpg}
+   \includegraphics[width=\linewidth]{images/mobilenetv2_cd_loss.jpg}
    % \caption{Fake faces from dataset 1}
    \label{fig:image1}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\linewidth}
-   \includegraphics[width=\linewidth]{mobilenetv2_cd_acc.jpg}
+   \includegraphics[width=\linewidth]{images/mobilenetv2_cd_acc.jpg}
    % \caption{Real faces from dataset 1}
    \label{fig:image2}
 \end{minipage}
