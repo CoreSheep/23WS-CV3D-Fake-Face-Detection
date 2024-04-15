@@ -5,45 +5,45 @@ The style file: ieee_fullname.bst
 Database file #1: egbib.bib
 Warning--entry type for "kaggledatasetRealAndFakeFaceDetection" isn't style-file defined
 --line 107 of file egbib.bib
-You've used 4 entries,
+You've used 3 entries,
             2120 wiz_defined-function locations,
-            601 strings with 5605 characters,
-and the built_in function-call counts, 1114 in all, are:
-= -- 97
-> -- 65
+            595 strings with 5454 characters,
+and the built_in function-call counts, 906 in all, are:
+= -- 78
+> -- 58
 < -- 0
-+ -- 27
-- -- 22
-* -- 59
-:= -- 196
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 22
++ -- 23
+- -- 20
+* -- 53
+:= -- 162
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 35
-empty$ -- 95
-format.name$ -- 22
-if$ -- 231
+cite$ -- 3
+duplicate$ -- 28
+empty$ -- 73
+format.name$ -- 20
+if$ -- 186
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 3
 missing$ -- 1
-newline$ -- 24
-num.names$ -- 8
-pop$ -- 39
+newline$ -- 19
+num.names$ -- 6
+pop$ -- 30
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 15
 quote$ -- 0
-skip$ -- 28
+skip$ -- 21
 stack$ -- 0
-substring$ -- 21
-swap$ -- 5
+substring$ -- 15
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 12
 warning$ -- 0
-while$ -- 8
-width$ -- 5
-write$ -- 44
+while$ -- 6
+width$ -- 4
+write$ -- 34
 (There was 1 warning)

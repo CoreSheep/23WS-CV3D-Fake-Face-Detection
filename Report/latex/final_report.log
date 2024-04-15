@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.5)  15 APR 2024 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.5)  15 APR 2024 10:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -393,23 +393,25 @@ Package pdftex.def Info: img/ex-cd-improvedcnn-accuracy-results.png  used on inp
 \tf@brf=\write3
 \openout3 = `final_report.brf'.
 
-) [3 <./img/ex-cd-improvedcnn-accuracy-results.png>] (./final_report.aux)
+) [3
+
+ <./img/ex-cd-improvedcnn-accuracy-results.png>] (./final_report.aux)
 Package rerunfilecheck Info: File `final_report.brf' has not changed.
-(rerunfilecheck)             Checksum: 65CA24D6C16119CC44714C00B56D334A;208.
+(rerunfilecheck)             Checksum: D15900869D9C1503442D88EB920EA8B9;167.
  ) 
 Here is how much of TeX's memory you used:
- 10644 strings out of 476025
- 166943 string characters out of 5790017
+ 10627 strings out of 476025
+ 166750 string characters out of 5790017
  1871388 words of memory out of 5000000
- 30891 multiletter control sequences out of 15000+600000
- 537136 words of font info for 89 fonts, out of 8000000 for 9000
+ 30878 multiletter control sequences out of 15000+600000
+ 533982 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,9n,90p,968b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on final_report.pdf (3 pages, 308045 bytes).
+ 90i,9n,90p,968b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on final_report.pdf (3 pages, 252882 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 30 named destinations out of 1000 (max. 500000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 28 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

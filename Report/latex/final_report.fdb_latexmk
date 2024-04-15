@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex final_report"] 1713166694 "final_report.aux" "final_report.bbl" "final_report" 1713166730 0
+["bibtex final_report"] 1713168032 "final_report.aux" "final_report.bbl" "final_report" 1713168033 0
   "./egbib.bib" 1713164540 3859 fe23d22118f9d5d92e9842a61873ac3d ""
   "./ieee_fullname.bst" 1589832326 19905 72b73f4cb1c51eaa1a7af8ecad2b6bfb ""
-  "final_report.aux" 1713166729 5519 d62dc9bcb1cfea0b3c1db0758f81ec47 "pdflatex"
+  "final_report.aux" 1713168033 4796 726a99426d21cbda1cab2045c855bbef "pdflatex"
   (generated)
   "final_report.bbl"
   "final_report.blg"
   (rewritten before read)
-["pdflatex"] 1713166729 "/Users/xpeng/Documents/Dev/CV3D/23WS-CV3D-Fake-Face-Detection/Report/latex/final_report.tex" "final_report.pdf" "final_report" 1713166730 0
-  "/Users/xpeng/Documents/Dev/CV3D/23WS-CV3D-Fake-Face-Detection/Report/latex/final_report.tex" 1713166728 11955 b273a48b1345e42cc8e83335567c4731 ""
+["pdflatex"] 1713168033 "/Users/xpeng/Documents/Dev/CV3D/23WS-CV3D-Fake-Face-Detection/Report/latex/final_report.tex" "final_report.pdf" "final_report" 1713168033 0
+  "/Users/xpeng/Documents/Dev/CV3D/23WS-CV3D-Fake-Face-Detection/Report/latex/final_report.tex" 1713168031 11630 0cd1d2733aa42020cc46a6fde7ab418a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -43,12 +43,6 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
@@ -125,10 +119,10 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1699211326 7883459 0e6430d247fd4f4059307e41a2c3a021 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "cvpr.cls" 1589832326 20566 94fe0374a1aefb79e6d48d815a6f6901 ""
-  "final_report.aux" 1713166729 5519 d62dc9bcb1cfea0b3c1db0758f81ec47 "pdflatex"
-  "final_report.bbl" 1713166694 1117 ed2d36c1f638ec85220a39909e5b02b3 "bibtex final_report"
-  "final_report.brf" 1713166729 208 65ca24d6c16119cc44714c00b56d334a "pdflatex"
-  "final_report.tex" 1713166728 11955 b273a48b1345e42cc8e83335567c4731 ""
+  "final_report.aux" 1713168033 4796 726a99426d21cbda1cab2045c855bbef "pdflatex"
+  "final_report.bbl" 1713168033 935 ead92ecc7be903cb90a2365a40cc03fc "bibtex final_report"
+  "final_report.brf" 1713168033 167 d15900869d9c1503442d88eb920ea8b9 "pdflatex"
+  "final_report.tex" 1713168031 11630 0cd1d2733aa42020cc46a6fde7ab418a ""
   "img/ex-cd-improvedcnn-accuracy-results.png" 1713166447 60515 b88364a9124e129b9a250df4abfe1a46 ""
   "img/ex-d1-improvedcnn-accuracy-results.png" 1713134544 41489 068eae202db3af1949a98b3b0f215171 ""
   "img/ex-d1-simplecnn-accuracy-results.png" 1713133468 43189 98c3f3b162c85ce6c377492666f40e00 ""
