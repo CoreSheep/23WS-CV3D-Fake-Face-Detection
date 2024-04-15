@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: final_report.aux
+The style file: ieee_fullname.bst
+Database file #1: egbib.bib
+Warning--entry type for "kaggledatasetRealAndFakeFaceDetection" isn't style-file defined
+--line 107 of file egbib.bib
+You've used 4 entries,
+            2120 wiz_defined-function locations,
+            601 strings with 5605 characters,
+and the built_in function-call counts, 1114 in all, are:
+= -- 97
+> -- 65
+< -- 0
++ -- 27
+- -- 22
+* -- 59
+:= -- 196
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 35
+empty$ -- 95
+format.name$ -- 22
+if$ -- 231
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 1
+newline$ -- 24
+num.names$ -- 8
+pop$ -- 39
+preamble$ -- 1
+purify$ -- 18
+quote$ -- 0
+skip$ -- 28
+stack$ -- 0
+substring$ -- 21
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 8
+width$ -- 5
+write$ -- 44
+(There was 1 warning)

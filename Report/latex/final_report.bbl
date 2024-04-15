@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{Authors14}
+FirstName LastName.
+\newblock The frobnicatable foo filter, 2014.
+\newblock Face and Gesture submission ID 324. Supplied as additional material {\tt fg324.pdf}.
+
+\bibitem{kaggledatadeepfakeandrealimages}
+Trung-Nghia Le.
+\newblock Deepfake and real images dataset.
+\newblock \url{https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images}, 2022.
+
+\bibitem{le2021openforensics}
+Trung-Nghia Le, Huy~H. Nguyen, Junichi Yamagishi, and Isao Echizen.
+\newblock Openforensics: Large-scale challenging dataset for multi-face forgery detection and segmentation in-the-wild.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, 2021.
+
+\bibitem{kaggledatasetRealAndFakeFaceDetection}
+Seonghyeon Nam, Hyolim Kang, Dongyoung Kim, Sejong Yang, et~al.
+\newblock Real and fake face detection.
+\newblock \url{https://www.kaggle.com/datasets/ciplab/real-and-fake-face-detection}, 2020.
+\newblock Computational Intelligence and Photography Lab, Department of Computer Science, Yonsei University.
+
+\end{thebibliography}
